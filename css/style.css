@@ -1,0 +1,27 @@
+.error {
+	border: 4px solid lightcoral;
+	background-color: rgba(240, 0, 0, 0.1);
+	font-size: 20px;
+	color: lightcoral;
+	padding: 20px;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+.loader {
+	width: 60px;
+	height: 60px;
+	border: 8px solid palevioletred;
+	border-top: 8px solid transparent;
+	border-radius: 50%;
+	animation: spin 0.5s linear 0s infinite;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(358deg);
+	}
+}
