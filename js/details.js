@@ -1,3 +1,4 @@
+const gameTitle = document.querySelector(".game-title");
 const detailContainer = document.querySelector(".show-details");
 
 const queryString = document.location.search;
@@ -29,5 +30,6 @@ fetchShow();
 
 
 function createhtml (details) {
+    gameTitle.innerHTML = `${details.name}`
     detailContainer.innerHTML = `<h1>${details.name}</h1>`
 }
