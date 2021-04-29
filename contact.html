@@ -7,9 +7,58 @@
         <link href="css/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="results">
-            Loading...
+        <div class="nav-link"> <a href="/"> Back to list of shows </a> </div>
+
+        <div class="contact-container">
+
+            <form name= "form" id="contact-form">
+
+
+                <div>
+                    <label>
+                        Name (required)
+                        <input name="name" id="name" />
+                    </label>
+                    <div class="formError" id="nameError">
+                        Please enter a name
+                    </div>
+                </div>
+
+                <div>
+                    <label>
+                        Subject (minimum of 10 characters)
+                        <input name="subject" id="subject" />
+                    </label>
+                    <div class="formError" id="subjectError">
+                        Please enter a minimum of 10 characters
+                    </div>
+                </div>
+
+                <div>
+                    <label>Email (required)
+                        <input name="email" id="email" />
+                    </label>
+                    <div class="formError" id="emailError">
+                        Please enter a valid email address
+                    </div>
+                </div>
+
+                <div>
+                    <label>
+                        Address (required)
+                        <input name="address" id="address">
+                    </label>
+                    <div class="formError" id="addressError">
+                        Please enter a minimum of 25 characters
+                    </div>
+                </div>
+
+                <button>Submit</button>
+
+            </form>
+
         </div>
+
         <script src="js/components/results.js"></script>
         <script src="js/script.js"></script>
     </body>

@@ -31,5 +31,9 @@ fetchShow();
 
 function createhtml (details) {
     gameTitle.innerHTML = `${details.name}`
-    detailContainer.innerHTML = `<h1>${details.name}</h1>`
+    detailContainer.innerHTML = `<h1>${details.name}</h1>  
+                                <div class="details">
+                                <img src="${details.image.medium}" alt="${details.name}"/>
+                                <div class="info">${details.summary} Rating: ${details.rating.average}</div>
+                                </div>`
 }
